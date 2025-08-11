@@ -1,0 +1,23 @@
+{
+  "$schema": "https://typedoc.org/schema.json",
+  "entryPoints": ["src"],
+  "tsconfig": "tsconfig.json",
+  "plugin": ["typedoc-plugin-markdown"],
+  "out": "../../docs/content/platform/api/frontend",
+  "categorizeByGroup": false,
+  "hideBreadcrumbs": true,
+  "readme": "none",
+  "entryDocument": "index.md",
+  "excludePrivate": true,
+  "excludeProtected": false,
+  "excludeInternal": true,
+  "excludeExternals": false,
+  "exclude": [
+    "**/*.stories.*",
+    "**/*.spec.*",
+    "**/*.test.*",
+    "src/stories/**",
+    "src/tests/**",
+    "**/tests/**"
+  ]
+}
