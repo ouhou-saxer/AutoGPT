@@ -21,6 +21,7 @@ nav:
     - Using Ollama: platform/ollama.md
     - Using D-ID: platform/d_id.md
     - Blocks: platform/blocks/blocks.md
+    - API Reference: platform/api/index.md
     - Contributing:
         - Tests: platform/contributing/tests.md
   - AutoGPT Classic:
@@ -34,6 +35,7 @@ nav:
               - Search: classic/configuration/search.md
               - Voice: classic/configuration/voice.md
       - Usage: classic/usage.md
+      - API Reference: classic/api/classic.md
       - Help us improve AutoGPT:
           - Share your debug logs with us: classic/share-your-logs.md
           - Contribution guide: contributing.md
@@ -161,6 +163,12 @@ plugins:
   - search
   - git-revision-date-localized:
       enable_creation_date: true
+  - mkdocstrings:
+      handlers:
+        python:
+          paths:
+            - ../autogpt_platform/backend
+            - ../classic/original_autogpt
 
 extra:
   social:
